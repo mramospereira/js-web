@@ -7,6 +7,9 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- FONT AWESOEM -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 </head>
 
@@ -20,6 +23,10 @@
 	<main>
 		<section class="container">
 			<h2>Meus pacientes</h2>
+
+			<label for="filtrar-tabela">Filtre:</label>
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+
 			<table>
 				<thead>
 					<tr>
@@ -84,15 +91,18 @@
 				</div>
 				<div class="grupo">
 					<label for="peso">Peso:</label>
-					<input id="peso" class="campo campo-medio" name="peso" type="text" placeholder="Digite o peso do paciente">
+					<input id="peso" class="campo campo-medio" name="peso" type="text"
+						placeholder="Digite o peso do paciente">
 				</div>
 				<div class="grupo">
 					<label for="altura">Altura:</label>
-					<input id="altura" class="campo campo-medio" name="altura" type="text" placeholder="Digite a altura do paciente">
+					<input id="altura" class="campo campo-medio" name="altura" type="text"
+						placeholder="Digite a altura do paciente">
 				</div>
 				<div class="grupo">
 					<label for="gordura">Gordura:</label>
-					<input id="gordura" class="campo campo-medio" name="gordura" type="text" placeholder="Digite a gordura do paciente">
+					<input id="gordura" class="campo campo-medio" name="gordura" type="text"
+						placeholder="Digite a gordura do paciente">
 				</div>
 				<button id="adicionar-paciente" class="bto bto-principal">Adicionar</button>
 			</form>
@@ -102,6 +112,7 @@
 	<script src="js/principal.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/remover-paciente.js"></script>
+	<script src="js/filtra.js"></script>
 </body>
 
 </html>

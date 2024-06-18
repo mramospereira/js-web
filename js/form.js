@@ -38,11 +38,14 @@ function obtemPacienteDoFormulario(form) {
 function montaTr(paciente) {
     var pacienteTr = document.createElement("tr");
 
+    //var btn = <button type="submit"><i class="far fa-trash-alt"></i></button>;
+
     pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
     pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
     pacienteTr.appendChild(montaTd(paciente.altura, "info-altura"));
     pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
     pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
+    //pacienteTr.appendChild(montaTd(btn, "acoes"));
 
     return pacienteTr;
 }
